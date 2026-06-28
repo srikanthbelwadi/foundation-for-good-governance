@@ -325,6 +325,12 @@ ul { list-style: none; }
   background: rgba(255,255,255,0.12);
 }
 
+.nav-links a.active {
+  color: var(--gold-400);
+  background: rgba(255,255,255,0.08);
+  font-weight: 600;
+}
+
 .nav-donate {
   padding: 0.5rem 1.375rem;
   font-size: 0.875rem;
