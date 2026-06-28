@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Good Governance USA Inc. | 501(c)(3) Non-Profit</title>
+  <meta name="description" content="Foundation for Good Governance USA Inc. is an IRS-approved 501(c)(3) non-profit dedicated to civic education, poverty alleviation, educational advancement, health improvement, and government efficiency globally. EIN: 37-2186160.">
+  <meta name="keywords" content="Foundation for Good Governance, non-profit, 501c3, civic education, governance, donate, EIN 37-2186160">
+  <meta property="og:title" content="Foundation for Good Governance USA Inc.">
+  <meta property="og:description" content="Empowering Citizens. Strengthening Governance. IRS-approved 501(c)(3) non-profit.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <!-- Invoker commands polyfill for broader browser support -->
+  <script type="module">
+    if (!('commandForElement' in HTMLButtonElement.prototype)) {
+      import('https://esm.run/invokers-polyfill');
+    }
+  </script>
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo" aria-label="Foundation for Good Governance — Home">
+          <img src="assets/logo.jpg" alt="Foundation for Good Governance shield-torch logo" width="48" height="48">
+          <div class="nav-logo-text">
+            <span class="name">Foundation for Good Governance</span>
+            <span class="tagline">USA Inc. &bull; 501(c)(3) Non-Profit</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu" type="button">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#tax-exempt">501(c)(3)</a></li>
+          <li><a href="#board">Board</a></li>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button class="btn btn-donate nav-donate" id="nav-donate-btn" type="button" aria-label="Open donation dialog">
+              ❤ Donate Now
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ===================== HERO ===================== -->
+    <section id="hero" aria-labelledby="hero-heading">
+      <div class="hero-bg" role="img" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            IRS 501(c)(3) Approved · EIN 37-2186160
+          </div>
+          <h1 id="hero-heading" class="hero-title">
+            Empowering Citizens.
+            <span class="accent">Strengthening Governance.</span>
+          </h1>
+          <p class="hero-desc">
+            We foster civic involvement and engagement through charitable activities 
+            targeting poverty alleviation, educational advancement, health improvement, 
+            and government efficiency — globally.
+          </p>
+          <div class="hero-ctas">
+            <button class="btn btn-donate" id="hero-donate-btn" type="button">
+              ❤ Make a Donation
+            </button>
+            <a href="#mission" class="btn btn-outline">Learn Our Mission</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="value">501(c)(3)</div>
+              <div class="label">IRS Tax-Exempt Status</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value">May 2025</div>
+              <div class="label">Exemption Effective Date</div>
+            </div>
+            <div class="hero-stat">
+              <div class="value">100%</div>
+              <div class="label">Tax-Deductible Donations</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 10l5 5 5-5"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===================== MISSION ===================== -->
+    <section id="mission" aria-labelledby="mission-heading">
+      <div class="container">
+        <div class="mission-grid">
+          <div class="mission-text reveal">
+            <span class="section-tag">Our Mission</span>
+            <h2 id="mission-heading" class="section-title">Championing Ethical, Open &amp; Accountable Governance</h2>
+            <p class="section-subtitle">
+              Founded in California in 2025 and recognized by the IRS as a public charity, 
+              Foundation for Good Governance USA Inc. is dedicated to creating lasting positive change 
+              in communities around the world.
+            </p>
+            <blockquote class="mission-quote">
+              "To foster and facilitate enhanced citizen involvement and engagement on a day-to-day basis 
+              in charitable activities related to poverty alleviation, educational advancement, health 
+              improvement and government efficiency globally."
+            </blockquote>
+            <div class="mission-meta">
+              <div class="mission-meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>1220 Van Dyck Dr., Sunnyvale, CA 94087</span>
+              </div>
+              <div class="mission-meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span>California Corporation &bull; Entity No. B20250117415</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mission-visual reveal reveal-delay-2">
+            <div class="irs-card">
+              <div class="irs-card-header">
+                <div class="irs-icon" aria-hidden="true">🏛️</div>
+                <div class="irs-card-header-text">
+                  <h3>IRS Recognition Letter</h3>
+                  <p>Department of the Treasury · December 15, 2025</p>
+                </div>
+              </div>
+              <div class="irs-status-badge" aria-label="Status: Approved as 501(c)(3)">
+                <span aria-hidden="true">✅</span> Approved as 501(c)(3) Public Charity
+              </div>
+              <div class="irs-details">
+                <div class="irs-detail-item">
+                  <label>Federal Tax ID (EIN)</label>
+                  <span>37-2186160</span>
+                </div>
+                <div class="irs-detail-item">
+                  <label>Effective Date</label>
+                  <span>May 13, 2025</span>
+                </div>
+                <div class="irs-detail-item">
+                  <label>Public Charity Status</label>
+                  <span>509(a)(2)</span>
+                </div>
+                <div class="irs-detail-item">
+                  <label>Accounting Period Ends</label>
+                  <span>December 31</span>
+                </div>
+                <div class="irs-detail-item full-width">
+                  <label>Contribution Deductibility</label>
+                  <span>Yes — Donors may deduct contributions under IRC §170</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ACTIVITIES ===================== -->
+    <section id="activities" aria-labelledby="activities-heading">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">What We Do</span>
+          <h2 id="activities-heading" class="section-title">Our Core Programs &amp; Activities</h2>
+          <p class="section-subtitle">
+            Through direct programming, advocacy, and resource distribution, we address 
+            the root causes of social inequity and governance failures across communities worldwide.
+          </p>
+        </div>
+
+        <div class="activities-grid">
+          <article class="activity-card reveal reveal-delay-1">
+            <div class="activity-icon teal" aria-hidden="true">🗳️</div>
+            <h3>Civic Education &amp; Engagement</h3>
+            <p>Raising public awareness and empowering citizens to participate actively in democratic processes, local governance, and civic life on a day-to-day basis.</p>
+          </article>
+
+          <article class="activity-card reveal reveal-delay-2">
+            <div class="activity-icon gold" aria-hidden="true">📋</div>
+            <h3>Public Policy Research</h3>
+            <p>Conducting evidence-based research and publishing policy recommendations to promote transparency, accountability, and efficient governance practices at all levels.</p>
+          </article>
+
+          <article class="activity-card reveal reveal-delay-3">
+            <div class="activity-icon green" aria-hidden="true">🤝</div>
+            <h3>Poverty Alleviation</h3>
+            <p>Addressing and alleviating the root causes and impacts of poverty through direct programming, partnerships, and targeted resource distribution in underserved communities.</p>
+          </article>
+
+          <article class="activity-card reveal reveal-delay-4">
+            <div class="activity-icon blue" aria-hidden="true">📚</div>
+            <h3>Educational Advancement</h3>
+            <p>Improving access to and quality of education globally — from early childhood programs to professional development initiatives — bridging the opportunity gap for all learners.</p>
+          </article>
+
+          <article class="activity-card reveal reveal-delay-5">
+            <div class="activity-icon purple" aria-hidden="true">🏥</div>
+            <h3>Health Improvement</h3>
+            <p>Enhancing global health outcomes through direct health programming, advocacy for equitable health access, and strategic distribution of health resources.</p>
+          </article>
+
+          <article class="activity-card reveal reveal-delay-6">
+            <div class="activity-icon orange" aria-hidden="true">🌐</div>
+            <h3>Government Efficiency</h3>
+            <p>Supporting and collaborating with organizations worldwide that share our mission to build more efficient, transparent, and responsive government institutions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 501(c)(3) INFO ===================== -->
+    <section id="tax-exempt" aria-labelledby="tax-heading">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Tax-Exempt Status</span>
+          <h2 id="tax-heading" class="section-title">Your Donation is 100% Tax-Deductible</h2>
+          <p class="section-subtitle" style="color: rgba(255,255,255,0.72);">
+            Foundation for Good Governance USA Inc. is recognized by the IRS as a 501(c)(3) 
+            public charity. Every contribution you make may be deducted from your federal taxes.
+          </p>
+        </div>
+
+        <div class="tax-cards-grid">
+          <div class="tax-card reveal reveal-delay-1">
+            <div class="tax-card-icon" aria-hidden="true">💰</div>
+            <h3>Tax Deduction for Donors</h3>
+            <p>Under IRC Section 170, your donations to our organization are fully tax-deductible to the extent permitted by law. Always keep your official donation receipt for your records.</p>
+          </div>
+          <div class="tax-card reveal reveal-delay-2">
+            <div class="tax-card-icon" aria-hidden="true">📜</div>
+            <h3>Official IRS Approval</h3>
+            <p>We received our IRS determination letter on December 15, 2025, confirming our 501(c)(3) public charity status, effective May 13, 2025 — the date of our formation.</p>
+          </div>
+          <div class="tax-card reveal reveal-delay-3">
+            <div class="tax-card-icon" aria-hidden="true">🔍</div>
+            <h3>Public Transparency</h3>
+            <p>As a 509(a)(2) public charity, we are required to maintain financial transparency and file annual information returns (Form 990/990-EZ) with the IRS.</p>
+          </div>
+          <div class="tax-card reveal reveal-delay-4">
+            <div class="tax-card-icon" aria-hidden="true">🧾</div>
+            <h3>Official Donation Receipts</h3>
+            <p>Every donor receives an official tax receipt stating no goods or services were exchanged for the contribution — qualifying it fully for the charitable deduction.</p>
+          </div>
+          <div class="tax-card reveal reveal-delay-5">
+            <div class="tax-card-icon" aria-hidden="true">🌍</div>
+            <h3>Global Reach</h3>
+            <p>Our 501(c)(3) status allows us to fund charitable activities domestically and internationally, extending our impact to communities around the world.</p>
+          </div>
+          <div class="tax-card reveal reveal-delay-6">
+            <div class="tax-card-icon" aria-hidden="true">⚖️</div>
+            <h3>Non-Political</h3>
+            <p>As required by law, we do not support or oppose political candidates or parties. Our work is strictly focused on charitable, educational, and civic purposes.</p>
+          </div>
+        </div>
+
+        <div class="irs-approval-banner reveal">
+          <div class="banner-left">
+            <div class="banner-icon" aria-hidden="true">🏛️</div>
+            <div class="banner-text">
+              <h4>IRS Determination Letter — Confirmed</h4>
+              <p>Foundation for Good Governance USA Inc. · Sunnyvale, California</p>
+            </div>
+          </div>
+          <div class="banner-details">
+            <div class="banner-detail">
+              <label>Federal EIN</label>
+              <span>37-2186160</span>
+            </div>
+            <div class="banner-detail">
+              <label>Status</label>
+              <span>501(c)(3) · 509(a)(2)</span>
+            </div>
+            <div class="banner-detail">
+              <label>Effective</label>
+              <span>May 13, 2025</span>
+            </div>
+            <div class="banner-detail">
+              <label>Deductible</label>
+              <span>Yes (IRC §170)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BOARD ===================== -->
+    <section id="board" aria-labelledby="board-heading">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Leadership</span>
+          <h2 id="board-heading" class="section-title">Board of Directors</h2>
+          <p class="section-subtitle">
+            Our board is composed of dedicated civic leaders committed to advancing good 
+            governance, transparency, and community-driven change.
+          </p>
+        </div>
+
+        <div class="board-grid">
+          <div class="board-card reveal reveal-delay-1">
+            <div class="board-card-header">
+              <div class="board-avatar" aria-hidden="true">BS</div>
+              <h3>Belwadi Subramanya Srikanth</h3>
+              <span class="board-role">President &amp; Chief Executive Officer</span>
+            </div>
+            <div class="board-card-body">
+              <div class="board-info-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>1220 Van Dyck Dr., Sunnyvale, CA 94087</span>
+              </div>
+              <div class="board-info-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span>Contact via form below</span>
+              </div>
+              <div class="board-info-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>Authorized President, Foundation for Good Governance USA Inc.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="board-card reveal reveal-delay-2">
+            <div class="board-card-header">
+              <div class="board-avatar" aria-hidden="true">SE</div>
+              <h3>Suresh Ediga</h3>
+              <span class="board-role">Secretary &amp; Treasurer</span>
+            </div>
+            <div class="board-card-body">
+              <div class="board-info-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>385 Chain O' Hills Rd., Colonia, NJ 07067</span>
+              </div>
+              <div class="board-info-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span>Contact via form below</span>
+              </div>
+              <div class="board-info-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                <span>Secretary &amp; Treasurer, Oversight of Financial Operations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DONATE ===================== -->
+    <section id="donate" aria-labelledby="donate-heading">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Support Our Work</span>
+          <h2 id="donate-heading" class="section-title">Make a Difference Today</h2>
+          <p class="section-subtitle">
+            Your generous contribution directly funds civic education, poverty alleviation 
+            programs, and transparency initiatives worldwide. All donations are 100% tax-deductible.
+          </p>
+        </div>
+
+        <div class="donate-grid">
+          <!-- Bank Transfer -->
+          <div class="bank-card reveal">
+            <div class="bank-card-title">
+              <div class="icon-wrap" aria-hidden="true">🏦</div>
+              <div>
+                <h3>Bank Transfer / Check</h3>
+                <p>Wire transfer, ACH, Zelle, or mail a check</p>
+              </div>
+            </div>
+            <div class="bank-detail-row">
+              <span class="key">Account Name</span>
+              <span class="val">Foundation for Good Governance USA Inc.</span>
+            </div>
+            <div class="bank-detail-row">
+              <span class="key">Account Type</span>
+              <span class="val">Checking</span>
+            </div>
+            <div class="bank-detail-row">
+              <span class="key">Account No.</span>
+              <span class="val">2906385678</span>
+            </div>
+            <div class="bank-detail-row">
+              <span class="key">ACH Routing</span>
+              <span class="val">322271627</span>
+            </div>
+            <div class="bank-detail-row">
+              <span class="key">Wire Routing</span>
+              <span class="val">021000021</span>
+            </div>
+            <div class="bank-detail-row">
+              <span class="key">Federal EIN</span>
+              <span class="val">37-2186160</span>
+            </div>
+
+            <!-- Zelle -->  
+            <div class="bank-zelle-row" role="region" aria-label="Zelle payment option">
+              <div class="zelle-badge" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="24" fill="#6D1ED4"/><path d="M14 16h13.5L14 32h20" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Zelle
+              </div>
+              <div class="zelle-tag">
+                <span class="key">Zelle Tag</span>
+                <span class="val zelle-val">PAY-FFGG</span>
+              </div>
+            </div>
+
+            <div class="bank-note">
+              📮 <strong>Mail checks payable to:</strong><br>
+              Foundation for Good Governance USA Inc.<br>
+              1220 Van Dyck Dr., Sunnyvale, CA 94087, USA
+            </div>
+          </div>
+
+          <!-- Online Donation Widget -->
+          <div class="donate-widget reveal reveal-delay-2">
+            <div class="widget-title">💳 Donate Online</div>
+            <div class="widget-subtitle">Select an amount or enter a custom donation</div>
+
+            <div class="amount-grid" role="group" aria-label="Select donation amount">
+              <button class="amount-btn active" data-amount="25" type="button" aria-pressed="true">$25</button>
+              <button class="amount-btn" data-amount="50" type="button" aria-pressed="false">$50</button>
+              <button class="amount-btn" data-amount="100" type="button" aria-pressed="false">$100</button>
+              <button class="amount-btn" data-amount="250" type="button" aria-pressed="false">$250</button>
+            </div>
+
+            <div class="custom-amount-wrap">
+              <span class="custom-prefix" aria-hidden="true">$</span>
+              <input
+                type="number"
+                id="custom-amount"
+                name="custom-amount"
+                placeholder="Enter custom amount"
+                min="1"
+                step="1"
+                aria-label="Custom donation amount in US dollars"
+                autocomplete="off"
+              >
+            </div>
+
+            <button class="btn btn-donate" id="open-checkout-btn" style="width:100%;justify-content:center;font-size:1.0625rem;padding:1rem;" type="button">
+              ❤ Donate Now
+            </button>
+
+            <p class="donate-tax-note">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Tax-deductible under IRC §170 · EIN: 37-2186160
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tag">Get In Touch</span>
+          <h2 id="contact-heading" class="section-title">Contact Us</h2>
+          <p class="section-subtitle">
+            Have questions about our programs, volunteering, or donations? 
+            We'd love to hear from you.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info-card reveal">
+            <h3>Foundation for Good Governance USA Inc.</h3>
+            <p>Reach out to learn more about our mission, get involved, or arrange a donation.</p>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">📍</div>
+              <div class="contact-item-text">
+                <label>Mailing Address</label>
+                <span>1220 Van Dyck Dr.<br>Sunnyvale, CA 94087, USA</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">🏛️</div>
+              <div class="contact-item-text">
+                <label>IRS Status</label>
+                <span>501(c)(3) Public Charity<br>EIN: 37-2186160</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">📅</div>
+              <div class="contact-item-text">
+                <label>Incorporated</label>
+                <span>State of California<br>Entity No. B20250117415</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">💌</div>
+              <div class="contact-item-text">
+                <label>Email</label>
+                <span>Use the contact form →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrap reveal reveal-delay-2">
+            <form id="contact-form" novalidate aria-label="Contact form" data-recipient="srikanthbelwadi@gmail.com">
+              <div class="form-row">
+                <div class="field">
+                  <label for="contact-fname">First Name <span class="req" aria-hidden="true">*</span></label>
+                  <input
+                    type="text"
+                    id="contact-fname"
+                    name="first-name"
+                    required
+                    autocomplete="given-name"
+                    aria-required="true"
+                    aria-errormessage="fname-error"
+                    placeholder="Jane"
+                  >
+                  <div id="fname-error" class="error-msg" role="alert"><span aria-hidden="true">⚠</span> First name is required.</div>
+                </div>
+                <div class="field">
+                  <label for="contact-lname">Last Name <span class="req" aria-hidden="true">*</span></label>
+                  <input
+                    type="text"
+                    id="contact-lname"
+                    name="last-name"
+                    required
+                    autocomplete="family-name"
+                    aria-required="true"
+                    aria-errormessage="lname-error"
+                    placeholder="Smith"
+                  >
+                  <div id="lname-error" class="error-msg" role="alert"><span aria-hidden="true">⚠</span> Last name is required.</div>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="contact-email">Email Address <span class="req" aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  inputmode="email"
+                  aria-required="true"
+                  aria-errormessage="email-error"
+                  placeholder="jane@example.com"
+                >
+                <div id="email-error" class="error-msg" role="alert"><span aria-hidden="true">⚠</span> A valid email address is required.</div>
+              </div>
+
+              <div class="field">
+                <label for="contact-subject">Subject <span class="req" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="contact-subject"
+                  name="subject"
+                  required
+                  aria-required="true"
+                  aria-errormessage="subject-error"
+                  placeholder="How can we help?"
+                >
+                <div id="subject-error" class="error-msg" role="alert"><span aria-hidden="true">⚠</span> Subject is required.</div>
+              </div>
+
+              <div class="field">
+                <label for="contact-message">Message <span class="req" aria-hidden="true">*</span></label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  required
+                  rows="5"
+                  aria-required="true"
+                  aria-errormessage="message-error"
+                  placeholder="Tell us how you'd like to get involved or any questions you have..."
+                ></textarea>
+                <div id="message-error" class="error-msg" role="alert"><span aria-hidden="true">⚠</span> Message is required.</div>
+              </div>
+
+              <button type="submit" class="btn btn-teal" style="width:100%;justify-content:center;padding:0.875rem;">
+                Send Message →
+              </button>
+            </form>
+
+            <div class="form-success" id="form-success-msg" role="status" aria-live="polite">
+              <div class="success-icon" aria-hidden="true">✅</div>
+              <h4>Message Sent!</h4>
+              <p>Thank you for reaching out. A member of our team will be in touch with you shortly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo" aria-label="Foundation for Good Governance — Home">
+            <img src="assets/logo.jpg" alt="FFGG Logo" width="44" height="44">
+            <div class="nav-logo-text">
+              <span class="name">Foundation for Good Governance</span>
+              <span class="tagline">USA Inc.</span>
+            </div>
+          </a>
+          <p>Fostering citizen engagement, civic education, poverty alleviation, and government efficiency — globally since 2025.</p>
+          <span class="footer-ein">EIN: 37-2186160</span>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#mission">Our Mission</a></li>
+            <li><a href="#activities">Programs &amp; Activities</a></li>
+            <li><a href="#tax-exempt">501(c)(3) Status</a></li>
+            <li><a href="#board">Board of Directors</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal & Info -->
+        <div class="footer-links-col">
+          <h4>Organization Info</h4>
+          <ul>
+            <li><a href="#mission">About Us</a></li>
+            <li><a href="#tax-exempt">IRS Determination Letter</a></li>
+            <li><a href="#donate">How to Donate</a></li>
+            <li><a href="#board">Leadership</a></li>
+          </ul>
+          <div style="margin-top:1.5rem;">
+            <div style="font-size:0.8125rem;color:rgba(255,255,255,0.5);">
+              <strong style="color:rgba(255,255,255,0.7);">Address</strong><br>
+              1220 Van Dyck Dr.<br>
+              Sunnyvale, CA 94087, USA
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Foundation for Good Governance USA Inc. All rights reserved.</p>
+        <p>State of California · Entity No. B20250117415</p>
+      </div>
+
+      <p class="footer-disclaimer">
+        Foundation for Good Governance USA Inc. is a tax-exempt organization under Section 501(c)(3) of the Internal Revenue Code. 
+        Federal Tax ID (EIN): 37-2186160. Effective date of exemption: May 13, 2025. Public charity status: 509(a)(2). 
+        Donations are tax-deductible to the full extent permitted by law under IRC Section 170. 
+        No goods or services are provided in exchange for contributions.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===================== DONATION DIALOG ===================== -->
+  <dialog id="donate-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-desc">
+    <!-- Step 1: Payment form -->
+    <div id="checkout-form-step">
+      <div class="dialog-header">
+        <div>
+          <h2 id="dialog-title">Complete Your Donation</h2>
+          <p id="dialog-desc">Secure · Tax-Deductible · EIN 37-2186160</p>
+        </div>
+        <button class="dialog-close" id="dialog-close-btn" type="button" aria-label="Close donation dialog">✕</button>
+      </div>
+
+      <div class="dialog-body">
+        <div class="dialog-amount-summary">
+          <div class="summary-label">Your Donation Amount</div>
+          <div class="summary-amount" id="dialog-amount-display">$25.00</div>
+          <div class="summary-note">Tax-deductible · Foundation for Good Governance USA Inc.</div>
+        </div>
+
+        <form id="checkout-form" novalidate aria-label="Payment details">
+          <div class="dialog-fields">
+            <div class="dialog-field">
+              <label for="donor-name">Full Name</label>
+              <input type="text" id="donor-name" name="donor-name" placeholder="Jane Smith" required autocomplete="name" aria-required="true">
+            </div>
+            <div class="dialog-field">
+              <label for="donor-email">Email Address</label>
+              <input type="email" id="donor-email" name="donor-email" placeholder="jane@example.com" required autocomplete="email" inputmode="email" aria-required="true">
+            </div>
+            <div class="dialog-field">
+              <label for="cc-number">Card Number</label>
+              <input type="text" id="cc-number" name="cc-number" placeholder="1234 5678 9012 3456" required maxlength="19" autocomplete="cc-number" inputmode="numeric" aria-required="true">
+            </div>
+            <div class="cc-row">
+              <div class="dialog-field">
+                <label for="cc-expiry">Expiry (MM/YY)</label>
+                <input type="text" id="cc-expiry" name="cc-expiry" placeholder="MM/YY" required maxlength="5" autocomplete="cc-exp" inputmode="numeric" aria-required="true">
+              </div>
+              <div class="dialog-field">
+                <label for="cc-cvv">CVV</label>
+                <input type="text" id="cc-cvv" name="cc-cvv" placeholder="123" required maxlength="4" autocomplete="cc-csc" inputmode="numeric" aria-required="true">
+              </div>
+            </div>
+          </div>
+          <p class="secure-note" aria-label="Secure payment indicator">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Secured &amp; Encrypted · Simulated Demo
+          </p>
+        </form>
+      </div>
+
+      <div class="dialog-footer">
+        <button class="btn btn-donate" id="confirm-donate-btn" type="button">
+          ❤ Confirm Donation
+        </button>
+        <button class="btn btn-ghost" id="dialog-cancel-btn" type="button">Cancel</button>
+      </div>
+    </div>
+
+    <!-- Step 2: Success -->
+    <div class="donate-success" id="checkout-success-step">
+      <div class="success-checkmark" aria-hidden="true">✓</div>
+      <h3>Thank You for Your Generosity!</h3>
+      <p>Your donation has been received. You will receive an official tax receipt for your contribution to Foundation for Good Governance USA Inc.</p>
+      <p class="ein-ref">🏛 EIN: 37-2186160 · 501(c)(3) Certified</p>
+      <p style="font-size:0.875rem;color:var(--neutral-500);">
+        No goods or services were provided in exchange for this contribution. 
+        Your donation is tax-deductible under IRC Section 170.
+      </p>
+      <button class="btn btn-teal" id="close-success-btn" type="button">Close</button>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
