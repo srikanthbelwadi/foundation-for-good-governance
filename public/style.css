@@ -529,7 +529,7 @@ ul { list-style: none; }
 }
 
 @media (max-width: 900px) {
-  .mission-grid { grid-template-columns: 1fr; gap: var(--space-10); }
+  .mission-grid { grid-template-columns: 1fr; gap: var(--space-8); }
 }
 
 .mission-text .section-subtitle {
@@ -965,7 +965,7 @@ ul { list-style: none; }
 .donate-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-10);
+  gap: var(--space-8);
   align-items: stretch;
 }
 
@@ -1610,7 +1610,7 @@ ul { list-style: none; }
 .footer-grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
-  gap: var(--space-10);
+  gap: var(--space-8);
   margin-bottom: var(--space-12);
   padding-bottom: var(--space-12);
   border-bottom: 1px solid rgba(255,255,255,0.1);
