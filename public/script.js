@@ -6,6 +6,12 @@
 
 'use strict';
 
+// ─── CONFIGURATION ───────────────────────────────────────────
+// Set this to a real Payment Gateway link (Zeffy, Stripe Payment Link, or PayPal)
+// e.g. "https://www.zeffy.com/donation-form/your-id"
+// If empty, the website will use the built-in checkout simulator modal.
+const PAYMENT_GATEWAY_URL = "";
+
 // ─── Utilities ───────────────────────────────────────────────
 const $ = (sel, ctx = document) => ctx.querySelector(sel);
 const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
@@ -100,6 +106,13 @@ const checkoutForm = $('#checkout-form');
 function openDonateDialog() {
   const amount = parseFloat(customAmountInput?.value) || selectedAmount || 25;
   selectedAmount = amount;
+
+  // If a real payment gateway link is set, redirect there directly
+  if (PAYMENT_GATEWAY_URL) {
+    window.open(PAYMENT_GATEWAY_URL, '_blank', 'noopener,noreferrer');
+    return;
+  }
+
   if (dialogAmountDisplay) {
     dialogAmountDisplay.textContent = formatAmount(amount);
   }
@@ -220,24 +233,48 @@ contactForm?.addEventListener('submit', e => {
     if (!input.checkValidity()) allValid = false;
   });
 
+  // Verify hCaptcha response (only if script is loaded)
+  const hcaptchaVal = typeof hcaptcha !== 'undefined' ? hcaptcha.getResponse() : '';
+  const captchaError = $('#captcha-error');
+  if (typeof hcaptcha !== 'undefined' && !hcaptchaVal) {
+    if (captchaError) captchaError.style.display = 'block';
+    allValid = false;
+  } else {
+    if (captchaError) captchaError.style.display = 'none';
+  }
+
   if (!allValid) return;
 
-  // Build mailto link with form data (org email kept hidden from DOM inspection)
-  const recipient = contactForm.dataset.recipient;
-  const fname = $('#contact-fname')?.value || '';
-  const lname = $('#contact-lname')?.value || '';
-  const email = $('#contact-email')?.value || '';
-  const subject = encodeURIComponent($('#contact-subject')?.value || 'Website Inquiry');
-  const body = encodeURIComponent(
-    `Name: ${fname} ${lname}\nEmail: ${email}\n\nMessage:\n${$('#contact-message')?.value || ''}`
-  );
+  const submitBtn = $('button[type="submit"]', contactForm);
+  const origBtnText = submitBtn.textContent;
+  submitBtn.textContent = 'Sending...';
+  submitBtn.disabled = true;
 
-  // Open mailto — works without a backend
-  window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+  const formData = new FormData(contactForm);
 
-  // Show success state
-  contactForm.style.display = 'none';
-  formSuccessMsg?.classList.add('visible');
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json'
+    },
+    body: formData
+  })
+  .then(async response => {
+    const json = await response.json();
+    if (response.ok && json.success) {
+      contactForm.style.display = 'none';
+      formSuccessMsg?.classList.add('visible');
+    } else {
+      alert(json.message || 'Oops! There was a problem submitting your form.');
+      submitBtn.textContent = origBtnText;
+      submitBtn.disabled = false;
+    }
+  })
+  .catch(error => {
+    alert('Oops! There was a network error submitting your form.');
+    submitBtn.textContent = origBtnText;
+    submitBtn.disabled = false;
+  });
 });
 
 // ─── Smooth Active Nav Link Highlighting ─────────────────────
