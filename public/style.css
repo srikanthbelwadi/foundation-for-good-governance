@@ -1618,7 +1618,7 @@ ul { list-style: none; }
 #site-footer {
   background: var(--teal-900);
   color: rgba(255,255,255,0.72);
-  padding: var(--space-16) 0 var(--space-8);
+  padding: var(--space-8) 0;
 }
 
 .footer-grid {
