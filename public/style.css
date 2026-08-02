@@ -1029,6 +1029,7 @@ ul { list-style: none; }
 .bank-card-title .icon-wrap {
   width: 48px; height: 48px;
   background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -1133,11 +1134,12 @@ ul { list-style: none; }
 
 /* Online donation widget */
 .donate-widget {
-  background: var(--white);
+  background: rgba(8, 44, 40, 0.85);
+  backdrop-filter: blur(12px);
   border-radius: var(--radius-xl);
   padding: var(--space-8);
-  box-shadow: var(--shadow-xl);
-  border: 2px solid var(--gold-100);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   position: relative;
   overflow: hidden;
   display: flex;
@@ -1158,12 +1160,12 @@ ul { list-style: none; }
   font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--teal-900);
+  color: var(--gold-400);
   margin-bottom: var(--space-2);
 }
 .widget-subtitle {
   font-size: 0.875rem;
-  color: var(--neutral-500, hsl(220,8%,52%));
+  color: rgba(255, 255, 255, 0.55);
   margin-bottom: var(--space-6);
 }
 
@@ -1178,25 +1180,26 @@ ul { list-style: none; }
 
 .amount-btn {
   padding: 0.6rem 0.5rem;
-  border: 2px solid var(--neutral-200);
+  border: 2px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-md);
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.05);
   font-family: var(--font-body);
   font-size: 0.9375rem;
   font-weight: 700;
-  color: var(--teal-700);
+  color: rgba(255, 255, 255, 0.72);
   cursor: pointer;
   transition: all var(--duration-fast) ease;
   text-align: center;
 }
 .amount-btn:hover {
-  border-color: var(--teal-400);
-  background: var(--teal-50);
+  border-color: var(--gold-400);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
 }
 .amount-btn.active {
-  border-color: var(--teal-600);
-  background: var(--teal-600);
-  color: var(--white);
+  border-color: var(--gold-500);
+  background: var(--gold-500);
+  color: var(--teal-950);
   box-shadow: var(--shadow-sm);
 }
 
@@ -1204,21 +1207,21 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   gap: 0;
-  border: 2px solid var(--neutral-200);
+  border: 2px solid rgba(255, 255, 255, 0.15);
   border-radius: var(--radius-md);
   overflow: hidden;
   margin-bottom: var(--space-6);
   transition: border-color var(--duration-fast) ease;
 }
-.custom-amount-wrap:focus-within { border-color: var(--teal-500); }
+.custom-amount-wrap:focus-within { border-color: var(--gold-400); }
 
 .custom-prefix {
   padding: 0.75rem 0.875rem;
-  background: var(--neutral-100);
+  background: rgba(255, 255, 255, 0.08);
   font-weight: 700;
-  color: var(--neutral-600);
+  color: rgba(255, 255, 255, 0.72);
   font-size: 1rem;
-  border-right: 2px solid var(--neutral-200);
+  border-right: 2px solid rgba(255, 255, 255, 0.15);
 }
 
 #custom-amount {
@@ -1229,13 +1232,13 @@ ul { list-style: none; }
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 600;
-  color: var(--teal-800);
-  background: var(--white);
+  color: var(--white);
+  background: transparent;
 }
 
 .donate-tax-note {
   font-size: 0.8125rem;
-  color: var(--neutral-500, hsl(220,8%,52%));
+  color: rgba(255, 255, 255, 0.45);
   text-align: center;
   margin-top: var(--space-4);
   display: flex;
@@ -1262,7 +1265,10 @@ ul { list-style: none; }
 @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; gap: var(--space-6); } }
 
 .contact-info-card {
-  background: linear-gradient(135deg, var(--teal-800), var(--teal-600));
+  background: rgba(8, 44, 40, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow-lg);
   border-radius: var(--radius-xl);
   padding: var(--space-8);
   color: var(--white);
@@ -1276,7 +1282,7 @@ ul { list-style: none; }
   font-family: var(--font-display);
   font-size: 1.3125rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--gold-400);
   margin-bottom: var(--space-2);
   word-break: break-word;
   overflow-wrap: break-word;
@@ -1285,7 +1291,7 @@ ul { list-style: none; }
 
 .contact-info-card > p {
   font-size: 0.875rem;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255,255,255,0.72);
   margin-bottom: var(--space-6);
 }
 
@@ -1332,11 +1338,12 @@ ul { list-style: none; }
 
 /* Contact Form */
 .contact-form-wrap {
-  background: var(--white);
+  background: rgba(8, 44, 40, 0.85);
+  backdrop-filter: blur(12px);
   border-radius: var(--radius-xl);
   padding: var(--space-8);
   box-shadow: var(--shadow-lg);
-  border: 1px solid var(--neutral-200);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .form-row {
@@ -1354,12 +1361,12 @@ ul { list-style: none; }
   display: block;
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--neutral-700, hsl(220,10%,30%));
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: var(--space-2);
 }
 
 .field label .req {
-  color: var(--gold-600);
+  color: var(--gold-400);
   margin-left: 2px;
 }
 
@@ -1368,34 +1375,39 @@ ul { list-style: none; }
 .field select {
   width: 100%;
   padding: 0.75rem 1rem;
-  border: 2px solid var(--neutral-200);
+  border: 2px solid rgba(255, 255, 255, 0.15);
   border-radius: var(--radius-md);
   font-family: var(--font-body);
   font-size: 0.9375rem;
-  color: var(--neutral-800);
-  background: var(--white);
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.04);
   transition: border-color var(--duration-fast) ease,
-              box-shadow var(--duration-fast) ease;
+              box-shadow var(--duration-fast) ease,
+              background var(--duration-fast) ease;
   outline: none;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .field input:focus,
 .field textarea:focus,
 .field select:focus {
-  border-color: var(--teal-500);
-  box-shadow: 0 0 0 3px hsl(174,52%,34%,0.12);
-}
-
-.field input:user-invalid,
+  border-color: var(--gold-400);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 3px rgba(232, 146, 13, 0.2);
+}.field input:user-invalid,
 .field textarea:user-invalid {
-  border-color: hsl(0, 72%, 55%);
-  background: hsl(0, 80%, 98%);
+  border-color: hsl(0, 85%, 65%);
+  background: rgba(255, 0, 0, 0.05);
 }
 
 .field .error-msg {
   display: none;
   font-size: 0.8125rem;
-  color: hsl(0, 72%, 50%);
+  color: hsl(0, 90%, 75%);
   margin-top: var(--space-2);
 }
 
@@ -1418,10 +1430,10 @@ ul { list-style: none; }
   gap: var(--space-4);
   justify-content: center;
   min-height: 420px;
-  background: var(--white);
+  background: transparent;
   border-radius: var(--radius-lg);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(8, 44, 40, 0.06);
+  border: none;
+  box-shadow: none;
 }
 .form-success.visible { display: flex; }
 .success-icon { 
@@ -1431,10 +1443,9 @@ ul { list-style: none; }
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--teal-900);
+  color: var(--gold-400);
 }
-.form-success p { 
-  color: var(--neutral-600); 
+.form-success p { color: rgba(255, 255, 255, 0.8); 
   font-size: 0.9375rem;
   line-height: 1.6;
   max-width: 480px;

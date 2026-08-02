@@ -269,9 +269,40 @@
             </div>
           </div>
 
-          <!-- Online Donation Widget (Embedded Zeffy Form) -->
-          <div class="donate-widget reveal reveal-delay-2" style="padding: 0; min-height: 600px; border: none; background: transparent; box-shadow: none;">
-            <iframe title="Donation form" src="https://www.zeffy.com/embed/donation-form/donate-to-make-a-difference-22405" style="width: 100%; height: 600px; border: none; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg);" allowpaymentrequest></iframe>
+          <!-- Online Donation Widget -->
+          <div class="donate-widget reveal reveal-delay-2">
+            <div class="widget-title">💳 Donate Online</div>
+            <div class="widget-subtitle">Select an amount or enter a custom donation</div>
+
+            <div class="amount-grid" role="group" aria-label="Select donation amount">
+              <button class="amount-btn active" data-amount="25" type="button" aria-pressed="true">$25</button>
+              <button class="amount-btn" data-amount="50" type="button" aria-pressed="false">$50</button>
+              <button class="amount-btn" data-amount="100" type="button" aria-pressed="false">$100</button>
+              <button class="amount-btn" data-amount="250" type="button" aria-pressed="false">$250</button>
+            </div>
+
+            <div class="custom-amount-wrap">
+              <span class="custom-prefix" aria-hidden="true">$</span>
+              <input
+                type="number"
+                id="custom-amount"
+                name="custom-amount"
+                placeholder="Enter custom amount"
+                min="1"
+                step="1"
+                aria-label="Custom donation amount in US dollars"
+                autocomplete="off"
+              >
+            </div>
+
+            <button class="btn btn-donate" id="open-checkout-btn" style="width:100%;justify-content:center;font-size:1.0625rem;padding:1rem;" type="button">
+              ❤ Donate Now
+            </button>
+
+            <p class="donate-tax-note">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Tax-deductible under IRC §170 · EIN: 37-2186160
+            </p>
           </div>
         </div>
       </div>
@@ -405,7 +436,7 @@
                 ></textarea>
               </div>
 
-              <button type="submit" class="btn btn-teal" style="width:100%;justify-content:center;padding:0.875rem;">
+              <button type="submit" class="btn btn-donate" style="width:100%;justify-content:center;padding:0.875rem;">
                 Send Message →
               </button>
             </form>
