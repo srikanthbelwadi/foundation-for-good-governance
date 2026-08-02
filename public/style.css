@@ -1006,8 +1006,7 @@ ul { list-style: none; }
 
 /* Bank transfer card */
 .bank-card {
-  background: rgba(8, 44, 40, 0.85);
-  backdrop-filter: blur(12px);
+  background: #044d41;
   border-radius: var(--radius-xl);
   padding: var(--space-8);
   box-shadow: var(--shadow-lg);
@@ -1266,8 +1265,7 @@ ul { list-style: none; }
 @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; gap: var(--space-6); } }
 
 .contact-info-card {
-  background: rgba(8, 44, 40, 0.85);
-  backdrop-filter: blur(12px);
+  background: #044d41;
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: var(--shadow-lg);
   border-radius: var(--radius-xl);
@@ -1339,8 +1337,7 @@ ul { list-style: none; }
 
 /* Contact Form */
 .contact-form-wrap {
-  background: rgba(8, 44, 40, 0.85);
-  backdrop-filter: blur(12px);
+  background: #044d41;
   border-radius: var(--radius-xl);
   padding: var(--space-8);
   box-shadow: var(--shadow-lg);
