@@ -107,9 +107,10 @@ function openDonateDialog() {
   const amount = parseFloat(customAmountInput?.value) || selectedAmount || 25;
   selectedAmount = amount;
 
-  // If a real payment gateway link is set, redirect there directly (in-place to bypass pop-up blockers)
-  if (PAYMENT_GATEWAY_URL) {
-    window.location.href = PAYMENT_GATEWAY_URL;
+  // Since Zeffy is embedded directly on the page, scroll down smoothly to the widget
+  const donateSection = $('#donate');
+  if (donateSection) {
+    donateSection.scrollIntoView({ behavior: 'smooth' });
     return;
   }
 
