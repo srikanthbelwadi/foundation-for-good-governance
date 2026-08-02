@@ -202,6 +202,22 @@ $('#cc-cvv')?.addEventListener('input', e => {
 const contactForm = $('#contact-form');
 const formSuccessMsg = $('#form-success-msg');
 
+// Navigate back to form after success submit
+$('#back-to-form-btn')?.addEventListener('click', () => {
+  if (contactForm && formSuccessMsg) {
+    contactForm.style.display = 'block';
+    formSuccessMsg.classList.remove('visible');
+    contactForm.reset();
+    
+    // Reset submission button text
+    const submitBtn = $('button[type="submit"]', contactForm);
+    if (submitBtn) {
+      submitBtn.textContent = 'Send Message →';
+      submitBtn.disabled = false;
+    }
+  }
+});
+
 // Sync aria-invalid on blur and input
 function syncAriaInvalid(input) {
   if (!input.checkValidity()) {
