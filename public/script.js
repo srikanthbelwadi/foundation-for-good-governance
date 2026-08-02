@@ -107,9 +107,9 @@ function openDonateDialog() {
   const amount = parseFloat(customAmountInput?.value) || selectedAmount || 25;
   selectedAmount = amount;
 
-  // If a real payment gateway link is set, redirect there directly
+  // If a real payment gateway link is set, redirect there directly (in-place to bypass pop-up blockers)
   if (PAYMENT_GATEWAY_URL) {
-    window.open(PAYMENT_GATEWAY_URL, '_blank', 'noopener,noreferrer');
+    window.location.href = PAYMENT_GATEWAY_URL;
     return;
   }
 
@@ -232,16 +232,6 @@ contactForm?.addEventListener('submit', e => {
     syncAriaInvalid(input);
     if (!input.checkValidity()) allValid = false;
   });
-
-  // Verify hCaptcha response (only if script is loaded)
-  const hcaptchaVal = typeof hcaptcha !== 'undefined' ? hcaptcha.getResponse() : '';
-  const captchaError = $('#captcha-error');
-  if (typeof hcaptcha !== 'undefined' && !hcaptchaVal) {
-    if (captchaError) captchaError.style.display = 'block';
-    allValid = false;
-  } else {
-    if (captchaError) captchaError.style.display = 'none';
-  }
 
   if (!allValid) return;
 

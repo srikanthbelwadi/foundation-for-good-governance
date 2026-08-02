@@ -16,8 +16,6 @@
       import('https://esm.run/invokers-polyfill');
     }
   </script>
-  <!-- hCaptcha for secure spam prevention -->
-  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 </head>
 <body>
 
@@ -460,10 +458,6 @@
                   aria-errormessage="message-error"
                   placeholder="Tell us how you'd like to get involved or any questions you have..."
                 ></textarea>
-              <!-- hCaptcha Spam Prevention -->
-              <div class="field" style="margin: var(--space-6) 0;">
-                <div class="h-captcha" data-sitekey="10000000-ffff-ffff-ffff-ffffffffffff"></div>
-                <div id="captcha-error" class="error-msg" role="alert" style="display: none; color: var(--gold-600); font-size: 0.8125rem; margin-top: 4px;"><span aria-hidden="true">⚠</span> Captcha verification is required.</div>
               </div>
 
               <button type="submit" class="btn btn-teal" style="width:100%;justify-content:center;padding:0.875rem;">
