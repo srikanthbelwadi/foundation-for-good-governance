@@ -465,19 +465,7 @@
               </button>
             </form>
 
-            <div class="form-success" id="form-success-msg" role="status" aria-live="polite">
-              <div class="success-icon" aria-hidden="true">
-                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="32" cy="32" r="30" fill="hsl(174, 40%, 95%)" stroke="var(--teal-600)" stroke-width="3"/>
-                  <path d="M22 32L29 39L43 25" stroke="var(--teal-600)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <h4>Message Sent!</h4>
-              <p>Thank you for your message. Our team will review your message and reach out to you shortly.</p>
-              <button type="button" id="back-to-form-btn" class="btn btn-outline" style="margin-top: var(--space-4); width: 100%; justify-content: center;">
-                ← Send Another Message
-              </button>
-            </div>
+
           </div>
         </div>
       </div>
@@ -617,6 +605,19 @@
       <button class="btn btn-teal" id="close-success-btn" type="button">Close</button>
     </div>
   </dialog>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast-notification" role="status" aria-live="polite">
+    <div class="toast-content">
+      <div class="toast-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10" fill="var(--teal-50)" stroke="var(--teal-600)" stroke-width="2"/>
+          <path d="M8 12L11 15L16 9" stroke="var(--teal-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <span class="toast-text">Thank you for your message. Our team will review your message and reach out to you shortly.</span>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

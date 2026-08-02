@@ -200,23 +200,6 @@ $('#cc-cvv')?.addEventListener('input', e => {
 
 // ─── Contact Form ─────────────────────────────────────────────
 const contactForm = $('#contact-form');
-const formSuccessMsg = $('#form-success-msg');
-
-// Navigate back to form after success submit
-$('#back-to-form-btn')?.addEventListener('click', () => {
-  if (contactForm && formSuccessMsg) {
-    contactForm.style.display = 'block';
-    formSuccessMsg.classList.remove('visible');
-    contactForm.reset();
-    
-    // Reset submission button text
-    const submitBtn = $('button[type="submit"]', contactForm);
-    if (submitBtn) {
-      submitBtn.textContent = 'Send Message →';
-      submitBtn.disabled = false;
-    }
-  }
-});
 
 // Sync aria-invalid on blur and input
 function syncAriaInvalid(input) {
@@ -268,8 +251,17 @@ contactForm?.addEventListener('submit', e => {
   .then(async response => {
     const json = await response.json();
     if (response.ok && json.success) {
-      contactForm.style.display = 'none';
-      formSuccessMsg?.classList.add('visible');
+      contactForm.reset();
+      submitBtn.textContent = origBtnText;
+      submitBtn.disabled = false;
+      
+      const toast = $('#toast');
+      if (toast) {
+        toast.classList.add('show');
+        setTimeout(() => {
+          toast.classList.remove('show');
+        }, 5000);
+      }
     } else {
       alert(json.message || 'Oops! There was a problem submitting your form.');
       submitBtn.textContent = origBtnText;
