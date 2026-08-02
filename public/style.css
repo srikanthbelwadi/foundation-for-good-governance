@@ -1013,7 +1013,8 @@ ul { list-style: none; }
   border: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: var(--space-4);
   height: 100%;
 }
 
@@ -1021,7 +1022,7 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  margin-bottom: var(--space-6);
+  margin-bottom: 0;
   padding-bottom: var(--space-5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -1077,7 +1078,7 @@ ul { list-style: none; }
 }
 
 .bank-note {
-  margin-top: var(--space-5);
+  margin-top: 0;
   background: rgba(232, 146, 13, 0.08);
   border: 1px solid rgba(232, 146, 13, 0.2);
   border-radius: var(--radius-md);
@@ -1093,7 +1094,7 @@ ul { list-style: none; }
   align-items: center;
   justify-content: space-between;
   gap: var(--space-4);
-  margin-top: var(--space-5);
+  margin-top: 0;
   padding: var(--space-4) var(--space-5);
   background: rgba(109, 30, 212, 0.12);
   border: 1px solid rgba(109, 30, 212, 0.25);
