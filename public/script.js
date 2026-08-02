@@ -10,7 +10,7 @@
 // Set this to a real Payment Gateway link (Zeffy, Stripe Payment Link, or PayPal)
 // e.g. "https://www.zeffy.com/donation-form/your-id"
 // If empty, the website will use the built-in checkout simulator modal.
-const PAYMENT_GATEWAY_URL = "";
+const PAYMENT_GATEWAY_URL = "https://www.zeffy.com/en-US/donation-form/donate-to-make-a-difference-22405";
 
 // ─── Utilities ───────────────────────────────────────────────
 const $ = (sel, ctx = document) => ctx.querySelector(sel);
