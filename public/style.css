@@ -670,6 +670,7 @@ ul { list-style: none; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-6);
+  align-items: stretch;
 }
 
 @media (max-width: 1024px) { .activities-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -711,7 +712,7 @@ ul { list-style: none; }
 
 .activity-image-wrap {
   width: 100%;
-  height: 200px;
+  aspect-ratio: 16 / 10;
   overflow: hidden;
   position: relative;
 }
@@ -728,8 +729,8 @@ ul { list-style: none; }
 }
 
 .activity-card-content {
-  padding: var(--space-5) var(--space-6) var(--space-6);
-  flex: 1;
+  padding: var(--space-6);
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
