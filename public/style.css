@@ -678,7 +678,6 @@ ul { list-style: none; }
 .activity-card {
   background: var(--white);
   border-radius: var(--radius-lg);
-  padding: var(--space-8);
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--neutral-200);
   transition: transform var(--duration-normal) var(--ease-out),
@@ -686,6 +685,8 @@ ul { list-style: none; }
               border-color var(--duration-normal) ease;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .activity-card::after {
@@ -697,6 +698,7 @@ ul { list-style: none; }
   transform: scaleX(0);
   transform-origin: left;
   transition: transform var(--duration-normal) var(--ease-out);
+  z-index: 2;
 }
 
 .activity-card:hover {
@@ -707,25 +709,30 @@ ul { list-style: none; }
 
 .activity-card:hover::after { transform: scaleX(1); }
 
-.activity-icon {
-  width: 60px; height: 60px;
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.75rem;
-  margin-bottom: var(--space-5);
-  transition: transform var(--duration-normal) ease;
+.activity-image-wrap {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
 }
 
-.activity-card:hover .activity-icon { transform: scale(1.1) rotate(-3deg); }
+.activity-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease-out);
+}
 
-.activity-icon.teal    { background: hsl(174, 40%, 92%); }
-.activity-icon.gold    { background: hsl(38,  80%, 92%); }
-.activity-icon.blue    { background: hsl(210, 50%, 92%); }
-.activity-icon.green   { background: hsl(145, 45%, 92%); }
-.activity-icon.purple  { background: hsl(270, 45%, 92%); }
-.activity-icon.orange  { background: hsl(25,  70%, 92%); }
+.activity-card:hover .activity-image-wrap img {
+  transform: scale(1.06);
+}
+
+.activity-card-content {
+  padding: var(--space-5) var(--space-6) var(--space-6);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 
 .activity-card h3 {
   font-family: var(--font-display);
